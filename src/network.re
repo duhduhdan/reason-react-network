@@ -29,7 +29,8 @@ let make _children => {
   },
   willUnmount: fun {reduce} => {
     Document.removeEventListener Document.window "offline" (reduce (fun _ => Offline));
-    Document.removeEventListener Document.window "online" (reduce (fun _ => Online))
+    Document.removeEventListener Document.window "online" (reduce (fun _ => Online));
+    ()
   },
   render: fun {state: {status}} =>
     <div className="Network">
