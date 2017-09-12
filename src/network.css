@@ -1,0 +1,20 @@
+.Network {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.Network h1 {
+  font-size: 48px;
+}
+
+.Network h2 {
+  font-size: 36px;
+}
+
+.Network h1,
+.Network h2 {
+  font-weight: normal;
+}
